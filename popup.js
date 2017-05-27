@@ -311,10 +311,8 @@ window.addEventListener('DOMContentLoaded', function() {
                 ${alreadyDoneBtnText}
               </button>
             </div>
+            <div>${range}</div>
             <div class="err">${errStr}</div>
-          </div>
-          <div class="card-footer">
-            <small>${range}</small>
           </div>
         </div>`;
     }
