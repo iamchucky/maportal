@@ -1,0 +1,41 @@
+body {
+  width: 450px;
+  max-height: 600px;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  min-height: 40px;
+}
+
+#content {
+  display: none;
+  margin-top: 1em;
+  overflow-y: auto;
+  height: 100%;
+}
+
+form {
+  margin-bottom: 0px;
+}
+
+.input-group-btn {
+  height: calc(2.25rem + 2px);
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
+.radio label {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.err {
+  color: red;
+}

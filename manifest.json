@@ -1,0 +1,40 @@
+{
+  "name": "maportal helper",
+  "version": "1.4",
+  "manifest_version": 2,
+  "icons": { "48": "img/icon-48.png",
+            "128": "img/icon-128.png" },
+  "description": "Auto Input",
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiHgMt2yU5LpxLL3eP8vU+6qgSzxFZqbn6maaDjAQN3x8xGefhuC/cp4+TsQVq+OGn+cpJSW0MbRqbFcVOHGxaZEDm2/byUJWeuwFjIsQ2hE4jw0UtyAoM2ZAC5PQ/VLZEkSiBW2ASFJJXdEUj70vd8bKZOsENsD+7eb3SUji+/tjDwigTFLgPwSuF2WY3xwEMeE8UnGnpy31+d/a4cr8YQ0UQN5RZP0DValOJHt7m8hgOjlUSKC0krAM42EKXn6apu8x8VWM98/tAhbIJpXjJBdqh97OxKk3uf3UdOSI4J5B2H0CzuKfSkoX2s06gxTLsjAAnIr9rwyGWT3VAY90FwIDAQAB",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://ma.mohw.gov.tw/online/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_title": "helper",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "identity"
+  ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "oauth2": {
+    "client_id": "704710532239-m3hscnupogajmv2745h3mqv6cn9qhedm.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://spreadsheets.google.com/feeds"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="moment.min.js"></script>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="input-group">
+      <select class="form-control" id="calendarSelect">
+        <option disabled value="">讀取中 ...</option>
+      </select>
+      <span class="input-group-btn">
+        <button class="btn btn-primary" id="actionBtn">自動輸入</button>
+      </span>
+    </div>
+    <div id="content"></div>
+  </div>
+</body>
+</html>
